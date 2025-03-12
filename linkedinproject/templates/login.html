@@ -176,9 +176,15 @@
                     <p><a href="">Forgot password?</a></p>
                     <button type="submit">Sign in</button>
                 </form>
+
+                {% if messages %}
+                    {% for message in  messages%}
+                        {{ message }}
+                    {% endfor %}
+                {% endif %}
             </div>
         </section>
-        <p class="p">New to linkedin?<a class="create" href="">Join now &rarr;</a></p>
+        <p class="p">New to linkedin?<a class="create" href="signup">Join now &rarr;</a></p>
     </main>
 
     <!-- SCRIPT -->
